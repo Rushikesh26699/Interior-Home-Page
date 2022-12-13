@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    pad: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width:200px ;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px ;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+    color: white;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    
+}
+.content h1{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 60px;
+}
+
+.content p{
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+}
+button{
+    
+   font-family: sans-serif;
+   width: 200px;
+   padding: 15px 0;
+   text-align: center;
+   margin: 20px 10px ;
+   border-radius: 25px;
+   border: 2px solid #009688 ; 
+   background: transparent;
+   color: white;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+}
+span{
+  background: #009688; 
+  height: 100%; 
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+  border: none;  
+}
+
+.bottom{
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    /* transform: translateY(-90%); */
+    text-align: center;
+    color: white;
+    font-size: medium;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bottom h5:hover{
+    cursor: pointer;
+    color: #009688;
+    
+}
+.bottom button{
+    font-family: sans-serif;
+   width: 100px;
+   padding: 15px 0;
+   text-align: center;
+   margin: 20px 10px ;
+   border-radius: 15px;
+   border: 2px solid white; 
+   background: transparent;
+   color: white;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+}
+
+.bottom button:hover{
+    color: #009688;
+
+}
